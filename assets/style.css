@@ -1,0 +1,245 @@
+@font-face {
+    font-family:OpenSans; /*Работает на английском*/
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family:OpenSans;
+    background-color: #e3e3e3;
+    font-size:14pt;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+
+h1, h2, h3, h4, p {
+    padding: 5px 0;
+    font-family: 'Roboto';
+}
+
+header h1 {
+    color: white;
+}
+
+
+
+header {
+    background: white;
+    border-bottom: 3px solid black;
+}
+
+/* Стиль шапки */
+header div.top {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 3px solid black;
+    background-image: url("../images/header.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    color:white;
+}
+
+
+header div a:hover{
+    text-decoration: underline;
+}
+
+
+/* Размер логотипа */
+header div.top img{
+    width: 150px;
+    height: 120px;
+    margin-right: 20px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-small {
+    font-size: 12pt;
+    color: grey;
+}
+
+div.row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Расположение и стиль меню */
+header ul, footer ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* размер и стиль ссылок в меню */
+header ul li, footer ul li {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    transition: .2s;
+}
+/* стиль для кнопки в меню */
+header button, footer button {
+    max-width: 90%;
+    margin: 0;
+}
+
+/* Контент страницы по середине*/
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+
+/* стили для текстового поля, выбора, текстового поля и кнопки*/
+textarea, select, input, button {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14pt;
+    border: 1px solid black;   
+    font-family: 'Roboto';
+}
+/* Стиль для кнопки*/
+button {
+    margin: 0;
+    background-color: coral;
+    color: white;  
+    border-radius: 5px;
+    max-width: 90%; 
+    border: none;
+}
+
+
+/* При наведении изменяется цвет кнопки*/
+button:hover {
+    background-color: rgb(255, 120, 80);
+}
+
+/* При нажатии на кнопку меняется цвет*/
+button:focus{
+    background-color: rgb(255, 110, 80);
+}
+
+
+/* После нажатия меняется цвет кнопки*/
+button:active{
+    background-color: rgb(255, 100, 80);
+}
+
+
+main{
+    max-height: calc(100vh - 400px);
+}
+
+/* Размеры заголовка*/
+div.head {
+    padding: 20px;
+    margin: 40px 0 30px;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+
+/* Карточка товаров */
+div.col {
+    width: 32%;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Размер картинки в карточке*/
+div.col img {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    object-fit: inherit;
+}
+
+/* Слайдер*/
+div#slider {
+    position:relative;
+    padding: 10px 5px;
+    overflow: hidden;
+}
+
+div#slider div.slides {
+    position: relative;
+    display: flex;
+    transition: .4s;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+div#slider div.slides div.slide {
+    flex-shrink: 0;
+    margin-right: 20px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+div.slide img {
+    margin-bottom: 20px;;
+}
+
+/* Блок */
+div.wrap {
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+hr{
+    margin: 0 20px;
+    padding: 0;
+    border:1px solid black;
+}
