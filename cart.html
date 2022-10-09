@@ -10,9 +10,10 @@
     <script>
 
         minus = (id) => {
+
             n = document.getElementById(id);
 
-            if(n.innerHTML <= 1) return;
+            if(n.innerHTML <= 1 ) return;
 
             e = parseInt(n.innerHTML) - 1;
 
@@ -22,6 +23,7 @@
         }
 
         plus = (id) => {
+
             n = document.getElementById(id);
 
             e = parseInt(n.innerHTML) + 1;
@@ -29,6 +31,8 @@
             n.innerHTML = e;
 
             return false;
+
+
         }
 
 
@@ -74,9 +78,9 @@
                         <p>Цена: 500 руб.</p>
                     </div>
                     <div class="row">
-                        <p><a onclick="return minus('c1')" class="text-small">Удалить</a></p>
+                        <p><a href="#" class="text-small">Удалить</a></p>
                         <p id='c1'>1</p>
-                        <p><a onclick="return plus('c1')" class="text-small">Добавить</a></p>
+                        <p><a href="#" class="text-small">Добавить</a></p>
                     </div>
                 </div>
                 <!--Карточка с вазой-->
@@ -87,9 +91,9 @@
                         <p>Цена: 220 руб.</p>
                     </div>
                     <div class="row">
-                        <p><a onclick="return minus('c2')" class="text-small">Удалить</a></p>
+                        <p><a href="#" class="text-small">Удалить</a></p>
                         <p id='c2'>1</p>
-                        <p><a onclick="return plus('c2')" class="text-small">Добавить</a></p>
+                        <p><a href="#" class="text-small">Добавить</a></p>
                     </div>
                 </div>
                 <!--Карточка с корзинкой-->
